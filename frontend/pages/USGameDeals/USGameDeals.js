@@ -1,11 +1,11 @@
-// pages/deployFunctions/deployFunctions.js
+// frontend/pages/USGameDeals/USGameDeals.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    
   },
 
   /**
