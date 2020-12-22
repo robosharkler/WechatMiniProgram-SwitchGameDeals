@@ -11,22 +11,19 @@ router.get('/eshop-sales', (req, res) => {
 
     getGamesAmerica(['all']).then((result) => {
         result.forEach((element) => {
-            if (element.salePrice != null && element.platform == 'Nintendo Switch') {
+            if (element.salePrice != null) {
                 let company = element.developers == null ? element.publishers : element.developers
 
                 var game = {
                     id: id,
                     url: url + element.url,
                     title: element.title,
-                    description: element.description,
-                    boxArt: element.boxArt.includes(url) ? element.boxArt : url + element.boxArt,
-                    releaseDate: element.releaseDateMask,
-                    categories: element.categories,
-                    esrb: element.esrb,
+                    boxart: element.boxart == null ? null : url + element.boxart,
+                    releaseDate: element.releaseDateDisplay,
                     company: company == null ? [""] : company,
-                    availability: element.availability,
                     price: element.msrp,
-                    salePrice: element.salePrice
+                    salePrice: element.salePrice,
+                    lowestPrice: element.lowestPrice
                 }
 
                 array.push(game)
