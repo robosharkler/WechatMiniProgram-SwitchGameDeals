@@ -3,7 +3,6 @@
   <!-- 用户 openid -->
   <view class="userinfo">
     <button 
-      bindtap="getUSGameDeals"
       class="userinfo-avatar"
       style="background-image: url({{avatarUrl}})"
       size="default"

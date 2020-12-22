@@ -1,4 +1,4 @@
-// frontend/pages/USGameDeals/USGameDeals.js
+// frontend/pages/AmericaGameDeals/AmericaGameDeals.js
 Page({
 
   /**
