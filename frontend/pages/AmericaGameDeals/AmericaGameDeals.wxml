@@ -1,2 +1,18 @@
 <!--frontend/pages/AmericaGameDeals/AmericaGameDeals.wxml-->
 <text>frontend/pages/AmericaGameDeals/AmericaGameDeals.wxml</text>
+<scroll-view class="table-wrap" scroll-x="{{true}}">
+  <view>
+      <view class="table">
+          <view class="tr">
+              <block wx:for="{{tableData.title}}">
+              <view class="th left">{{item}}</view>
+              </block>
+          </view>
+          <view class="tr" wx:for="{{tableData.countentItem}}">
+              <block wx:for="{{item}}">
+                  <view class="td left">{{item}}</view>
+              </block>
+          </view>
+      </view>
+  </view>
+</scroll-view>
