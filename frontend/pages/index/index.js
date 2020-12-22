@@ -11,7 +11,7 @@ Page({
   },
   getUSGameDeals: function(e) {
     wx.navigateTo({
-      url: '../USGameDeals/USGameDeals',
+      url: '../AmericaGameDeals/AmericaGameDeals',
     })
   },
 })
