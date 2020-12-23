@@ -17,6 +17,7 @@ Page({
    */
   onLoad: function (options) {
     var that = this
+    wx.showLoading({title: 'Loading...'});
     wx.request({
       url: 'https://switch-game-deals.herokuapp.com/games/eshop-sales',
       success:function(res){
@@ -29,7 +30,6 @@ Page({
           listData.push(pushElem)
         });
         listData.sort((a, b) => -a[2]+b[2])
-
         that.setData({
             tableData:{
             title:["Artbox", "Title", "Price(U$D)", "Sale(U$D)"],
@@ -39,6 +39,7 @@ Page({
         console.log(that.data.tableData.countentItem.length)
         console.log(that.data.tableData.title)
         console.log(that.data.tableData.countentItem[0])
+        wx.hideLoading()
       }
     })
   },
