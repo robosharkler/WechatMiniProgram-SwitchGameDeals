@@ -6,13 +6,12 @@ Page({
    */
   data: {
     tableData:{
-      title:["Artbox", "Title", "Price", "salePrice", "LowestPrice", "Detail"],
+      title:[],
       countentItem:[
       ],
     },
     
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -26,13 +25,14 @@ Page({
         listDataBuffer.forEach(element => {
           // var pushElem = { boxart : element.boxart, title:element.title, price: element.price,
           //   salePrice:element.salePrice, lowestPrice: element.lowestPrice, detail: element.url}
-          var pushElem = [element.boxart,element.title,element.price,element.salePrice,element.salePrice,element.lowestPrice,element.url]
+          var pushElem = [element.boxart,element.title,element.price,element.salePrice]
           listData.push(pushElem)
         });
+        listData.sort((a, b) => -a[2]+b[2])
 
         that.setData({
             tableData:{
-            title:["Boxart", "Title", "Price", "salePrice", "LowestPrice", "Detail"],
+            title:["Artbox", "Title", "Price(U$D)", "Sale(U$D)"],
             countentItem:listData,
           },
         })

@@ -1,6 +1,10 @@
+.my_img {
+  width: 120rpx;
+  height:120rpx;
+}
 /*表格*/
 .table-wrap{
-  width: 96%;
+  width: 100%;
   /*margin-left: 1.6%;*/
   /*margin: 14rpx;*/
   top: 20rpx;
@@ -13,7 +17,8 @@
   border:1px solid #dadada;
   border-right:0;
   border-bottom: 0;
-  width: 98%;
+  width: 100%;
+  align-self: center;
 }
 .tr{
   width:100%;

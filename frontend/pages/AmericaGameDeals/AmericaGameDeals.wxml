@@ -1,17 +1,17 @@
 <!--frontend/pages/AmericaGameDeals/AmericaGameDeals.wxml-->
-<text>frontend/pages/AmericaGameDeals/AmericaGameDeals.wxml</text>
-<scroll-view class="table-wrap" scroll-x="{{true}}">
+<scroll-view class="table-wrap">
   <view>
       <view class="table">
           <view class="tr">
-              <block wx:for="{{tableData.title}}">
-              <view class="th left">{{item}}</view>
+              <block wx:for="{{tableData.title}}" wx:key="index">
+              <view class="th">{{item}}</view>
               </block>
           </view>
-          <view class="tr" wx:for="{{tableData.countentItem}}">
-              <block wx:for="{{item}}">
-                  <view class="td left">{{item}}</view>
-              </block>
+          <view class="tr" wx:for="{{tableData.countentItem}}" wx:key="index">
+              <view class="td"><image class='my_img' mode='widthFix' src="{{item[0]}}"></image></view>
+              <view class="td left">{{item[1]}}</view>
+              <view class="td">{{item[2]}}</view>
+              <view class="td">{{item[3]}}</view>
           </view>
       </view>
   </view>
