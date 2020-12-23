@@ -4,7 +4,7 @@ A mini program that can help user browse the great deal games on Nintendo Switch
 Currently, only America games are supported
 
 ## Backend:
-Powerd by Heroku, with code provided by https://github.com/Iseiju/nintendo-eshop-sales  
+Powerd by Heroku, with code provided by https://github.com/Iseiju/nintendo-eshop-sales and https://github.com/lmmfranco/nintendo-switch-eshop
 Currently, the backend API is https://switch-game-deals.herokuapp.com/games/eshop-sales
 
 ## Frontend:
