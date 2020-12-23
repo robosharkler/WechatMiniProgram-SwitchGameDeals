@@ -151,3 +151,7 @@ page {
   line-height: 36rpx;
   word-break: break-all;
 }
+.button_title {
+  font-size: 30rpx;
+  color: #007aff;
+ }

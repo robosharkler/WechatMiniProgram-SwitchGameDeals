@@ -11,3 +11,6 @@
     </view>
   </view>
 </view>
+<button open-type='feedback' class="button">
+    <text class='button_title'>Feedback</text>
+</button>
