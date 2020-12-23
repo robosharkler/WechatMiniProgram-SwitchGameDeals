@@ -29,7 +29,13 @@ Page({
           var pushElem = [element.boxart,element.title,element.price,element.salePrice]
           listData.push(pushElem)
         });
-        listData.sort((a, b) => -a[2]+b[2])
+        listData.sort(function(a, b){
+          if (a[2]==b[2]) {
+            return a[1].localeCompare(b[1]); //Sort by Title
+          } else {
+            return b[2]-a[2]; //Sort by Price
+          }
+        })
         that.setData({
             tableData:{
             title:["Artbox", "Title", "Price(U$D)", "Sale(U$D)"],
