@@ -11,3 +11,6 @@ Currently, the backend API is https://switch-game-deals.herokuapp.com/games/esho
 Powerd by Wechat mini program
 [Wechat Mini Program document](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
+## Demos:
+<img src="images/demo1.jpg" width="200">
+<img src="images/demo3.jpg" width="200">
